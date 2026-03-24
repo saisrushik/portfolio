@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# Portfolio — React Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive personal portfolio built with **React.js**, featuring smooth animations, a light/dark theme toggle, an AI-themed neural network background, multi-select project filtering, and a working contact form powered by EmailJS.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Single-Page Application** with client-side routing via React Router
+- **Light / Dark Theme** toggle with localStorage persistence
+- **Animated Neural Network Background** with floating AI/ML terminology rendered on canvas
+- **Smooth Animations** powered by Framer Motion (page transitions, scroll reveals, hover effects, stagger animations)
+- **Typing Animation** on the hero section cycling through role titles
+- **7 Sections** — About, Education, Experience, Publications, Projects, Certifications, Contact
+- **Projects Page** with interactive multi-select category filtering (Generative AI, ML, Frontend, Backend, Full-Stack)
+- **Navbar Dropdown** for quick project category navigation
+- **Contact Form** with EmailJS integration (name, email, phone, subject, message)
+- **Responsive Design** — fully functional on mobile, tablet, and desktop
+- **Tailwind CSS** utility-first styling with custom color palette and glass-card effects
+- **Social Links** — LinkedIn, GitHub, Medium, Kaggle, LeetCode, Google Scholar, DeepML, Email
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Technology | Purpose |
+|---|---|
+| React 19 | UI framework |
+| React Router 7 | Client-side routing |
+| Tailwind CSS 3 | Utility-first styling |
+| Framer Motion | Animations & transitions |
+| React Type Animation | Typing effect on hero |
+| React Icons | Icon library (Hi, Fa, Si) |
+| EmailJS | Contact form email delivery |
+| Canvas API | Neural network background |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```
+src/
+├── components/
+│   ├── AnimatedSection.js    # Scroll-triggered animations & stagger wrappers
+│   ├── Footer.js             # Social links footer
+│   ├── Navbar.js             # Sticky nav with Projects dropdown & theme toggle
+│   ├── NeuralBackground.js   # Canvas neural network + floating AI terms
+│   └── SectionWrapper.js     # Animated section title wrapper
+├── context/
+│   └── ThemeContext.js        # Light/dark theme provider
+├── data/
+│   └── portfolioData.js      # All portfolio content (edit this to personalize)
+├── pages/
+│   ├── About.js              # Hero section with avatar & social icons
+│   ├── Education.js          # Education timeline
+│   ├── Experience.js         # Work experience timeline
+│   ├── Publications.js       # Research publications
+│   ├── Projects.js           # Multi-select filtered project cards
+│   ├── Certifications.js     # Certification badges
+│   └── Contact.js            # Contact form (EmailJS)
+├── App.js                     # Router & layout
+├── index.js                   # Entry point
+└── index.css                  # Tailwind directives & custom utilities
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
 
-### `npm run build`
+- **Node.js** ≥ 16 (with npm)
+- **Git** (optional, for cloning)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation & Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/<your-username>/portfolio.git
+   cd portfolio
+   ```
 
-### `npm run eject`
+2. **Install dependencies**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Personalize your content**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   Open `src/data/portfolioData.js` and replace the placeholder data with your own information — name, bio, education, work experience, projects, publications, certifications, and social links.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Set up the contact form (EmailJS)**
 
-## Learn More
+   See [EmailSetup.md](EmailSetup.md) for detailed instructions on configuring EmailJS so the contact form sends real emails.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Start the development server**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+   The app will open at [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+6. **Build for production**
 
-### Analyzing the Bundle Size
+   ```bash
+   npm run build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   The optimized output will be in the `build/` folder, ready to deploy.
 
-### Making a Progressive Web App
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The production build can be deployed to any static hosting provider:
 
-### Advanced Configuration
+- **Vercel** — `npx vercel`
+- **Netlify** — drag & drop the `build/` folder, or connect your Git repo
+- **GitHub Pages** — install `gh-pages` and add deploy scripts
+- **Any static server** — `npx serve -s build`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Customization
 
-### Deployment
+| What to change | Where |
+|---|---|
+| Personal info, bio, social links | `src/data/portfolioData.js` |
+| Avatar / profile photo | `personalInfo.avatarUrl` in portfolioData |
+| Theme colors | `tailwind.config.js` → `colors.primary` |
+| EmailJS credentials | `src/pages/Contact.js` (see [EmailSetup.md](EmailSetup.md)) |
+| Neural background density | `NODE_COUNT` & `WORD_COUNT` in `NeuralBackground.js` |
+| AI floating terms | `AI_TERMS` array in `NeuralBackground.js` |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the [MIT License](LICENSE).
