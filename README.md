@@ -59,8 +59,11 @@ src/
 
 ## Prerequisites
 
-- **Node.js** ≥ 16 (with npm)
+- **Node.js**: v24.13.0
+- **npm**: v11.6.2
 - **Git** (optional, for cloning)
+
+If you prefer to match the exact Node/npm used during development, use `nvm` (macOS/Linux) or `nvm-windows` on Windows and run `nvm install 24.13.0` then `nvm use 24.13.0`.
 
 ## Installation & Setup
 
@@ -72,6 +75,19 @@ src/
    ```
 
 2. **Install dependencies**
+
+   If you cloned the repo and `package-lock.json` exists, use `npm ci` for a reproducible install:
+
+   ```bash
+   # use nvm to switch to the pinned Node version first (optional but recommended)
+   nvm install 24.13.0
+   nvm use 24.13.0
+
+   # install exact dependencies from the lockfile
+   npm ci
+   ```
+
+   If you don't have a lockfile or need to update packages, use:
 
    ```bash
    npm install
