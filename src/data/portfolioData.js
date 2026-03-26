@@ -1,6 +1,7 @@
 export const personalInfo = {
   name: "Govindgari Sai Srushik",
-  title: "AI/ML Engineer | Data Scientist | Software Engineer | Automation Engineer",
+  title: "AI/ML Engineer | Data Scientist | Software Engineer | Test Automation Engineer",
+  roles: ["AI/ML Engineer", "Data Scientist", "Software Engineer", "Test Automation Engineer"],
   tagline: "Building intelligent solutions at the intersection of software engineering and data science.",
   email: "saisrushik98@gmail.com",
   location: "Hyderabad, India",

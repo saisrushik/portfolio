@@ -47,13 +47,13 @@ export default function About() {
             <div className="text-lg md:text-xl text-primary-600 dark:text-primary-400 font-medium mb-4 h-8">
               <TypeAnimation
                 sequence={[
-                  "Software Engineer",
+                  personalInfo.roles[0],
                   2000,
-                  "Data Scientist",
+                  personalInfo.roles[1],
                   2000,
-                  "Researcher",
+                  personalInfo.roles[2],
                   2000,
-                  "Full-Stack Developer",
+                  personalInfo.roles[3],
                   2000,
                 ]}
                 wrapper="span"
