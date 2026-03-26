@@ -37,6 +37,12 @@ export default function Projects() {
 
   const filterKey = selectedCategories.length === 0 ? "all" : [...selectedCategories].sort().join(",");
 
+  const [expanded, setExpanded] = useState({});
+
+  function toggleExpand(idx) {
+    setExpanded((prev) => ({ ...prev, [idx]: !prev[idx] }));
+  }
+
   return (
     <SectionWrapper title="Projects">
       {/* Filter bar */}
@@ -107,7 +113,7 @@ export default function Projects() {
         >
           {filtered.length > 0 ? (
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {filtered.map((project) => (
+              {filtered.map((project, idx) => (
                 <StaggerItem key={project.title}>
                   <motion.div
                     whileHover={{ y: -6 }}
@@ -128,9 +134,23 @@ export default function Projects() {
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                         {project.title}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed flex-1">
-                        {project.description}
-                      </p>
+                      <div className="relative mb-4 flex-1">
+                        <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed pr-20">
+                          {expanded[idx]
+                            ? project.description
+                            : project.description && project.description.length > 300
+                            ? project.description.slice(0, 300) + "..."
+                            : project.description}
+                        </p>
+                        {project.description && project.description.length > 300 && (
+                          <button
+                            onClick={() => toggleExpand(idx)}
+                            className="absolute right-0 bottom-0 text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium"
+                          >
+                            {expanded[idx] ? "Read less" : "Read more"}
+                          </button>
+                        )}
+                      </div>
                       <div className="flex flex-wrap gap-2 mb-5">
                         {project.technologies.map((tech) => (
                           <span

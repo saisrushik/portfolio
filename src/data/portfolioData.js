@@ -1,26 +1,26 @@
 export const personalInfo = {
-  name: "Your Name",
-  title: "Software Engineer | Data Scientist | Researcher",
+  name: "Govindgari Sai Srushik",
+  title: "AI/ML Engineer | Data Scientist | Software Engineer | Automation Engineer",
   tagline: "Building intelligent solutions at the intersection of software engineering and data science.",
   email: "saisrushik98@gmail.com",
-  location: "City, Country",
+  location: "Hyderabad, India",
   avatarUrl: "https://placehold.co/300x300/3b82f6/ffffff?text=YN",
 };
 
 export const socialLinks = {
-  linkedin: "https://linkedin.com/in/your-profile",
-  github: "https://github.com/your-username",
+  linkedin: "https://www.linkedin.com/in/sai-srushik/",
+  github: "https://github.com/saisrushik/",
   medium: "https://medium.com/@your-username",
-  kaggle: "https://kaggle.com/your-username",
+  kaggle: "https://kaggle.com/govindgarisaisrushik",
   leetcode: "https://leetcode.com/your-username",
-  googleScholar: "https://scholar.google.com/citations?user=YOUR_ID",
-  deepml: "https://www.deep-ml.com/profile/your-username",
+  googleScholar: "https://scholar.google.com/citations?user=mLj1zRQAAAAJ",
+  deepml: "https://www.deep-ml.com/profile/g4VpZAzefMTgTh8kZyRlqqzHgl12",
   email: "mailto:saisrushik98@gmail.com",
 };
 
 export const aboutMe = {
   summary:
-    "I am a passionate software engineer and data scientist with experience in building scalable web applications and developing machine learning solutions. I love solving complex problems and turning data into actionable insights. With a strong background in computer science and a keen interest in research, I strive to stay at the cutting edge of technology.",
+    "I am a passionate software engineer and AI Engineer with experience in building scalable web applications and developing machine learning solutions. I love solving complex problems and turning data into actionable insights. With a strong background in computer science and a keen interest in research, I strive to stay at the cutting edge of technology.",
   highlights: [
     "Full-stack web development",
     "Machine Learning & Deep Learning",
@@ -32,102 +32,73 @@ export const aboutMe = {
 
 export const education = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "University Name",
-    location: "City, State",
-    period: "Aug 2022 – May 2024",
-    gpa: "3.9/4.0",
-    coursework: [
-      "Machine Learning",
-      "Deep Learning",
-      "Natural Language Processing",
-      "Cloud Computing",
-      "Algorithms & Data Structures",
-    ],
-  },
-  {
     degree: "Bachelor of Technology in Computer Science",
-    institution: "University Name",
-    location: "City, Country",
-    period: "Aug 2016 – May 2020",
-    gpa: "8.5/10.0",
+    institution: "VIT-AP University",
+    location: "Amaravati, Andhra Pradesh, India",
+    period: "Aug 2021 – May 2025",
+    gpa: "8.73/10.0",
     coursework: [
       "Data Structures",
-      "Operating Systems",
+      "Machine Learning",
       "Database Management",
-      "Computer Networks",
+      "Generative AI",
       "Software Engineering",
     ],
   },
+  {
+    degree: "Pre-University/Intermediate",
+    institution: "Pine Grove College",
+    location: "Hyderabad, Telangana, India",
+    period: "Jun 2019 – Apr 2021",
+    gpa: "96.8%",
+    coursework: [
+      "Mathsematics",
+      "Physics",
+      "Chemistry",
+    ],
+  }
 ];
 
 export const workExperience = [
   {
-    role: "Software Engineer",
-    company: "Company Name",
-    location: "City, State",
-    period: "Jun 2024 – Present",
+    role: "Programmer Analyst Trainee",
+    company: "Cognizant Technology Solutions",
+    location: "Chennai, Tamil Nadu, India",
+    period: "Aug 2025 – Present",
     description: [
-      "Developed and maintained scalable microservices processing 1M+ requests daily using Java and Spring Boot.",
-      "Designed and implemented RESTful APIs that improved system throughput by 40%.",
-      "Led migration of monolithic application to cloud-native architecture on AWS, reducing deployment time by 60%.",
-      "Implemented CI/CD pipelines using Jenkins and Docker for automated testing and deployment.",
+      "Developed and maintained web applications using Java, Spring Boot, and React.js, improving user experience and performance.",
     ],
   },
   {
-    role: "Data Science Intern",
-    company: "Company Name",
-    location: "City, State",
-    period: "May 2023 – Aug 2023",
+    role: "Intern",
+    company: "Cognizant Technology Solutions",
+    location: "Chennai, Tamil Nadu, India",
+    period: "Apr 2025 – Aug 2025",
     description: [
-      "Built machine learning models for customer churn prediction achieving 92% accuracy.",
-      "Developed data pipelines using Python and Apache Spark for processing large-scale datasets.",
-      "Created interactive dashboards with Tableau to visualize key business metrics.",
-      "Conducted A/B testing and statistical analysis to optimize product features.",
-    ],
-  },
-  {
-    role: "Junior Software Developer",
-    company: "Company Name",
-    location: "City, Country",
-    period: "Jul 2020 – Jul 2022",
-    description: [
-      "Built responsive web applications using React.js and Node.js serving 50K+ users.",
-      "Optimized database queries resulting in 35% improvement in page load times.",
-      "Collaborated with cross-functional teams in Agile sprints to deliver features on schedule.",
-      "Mentored junior developers and conducted code reviews to maintain code quality.",
+      "Assisted in the development of a microservices-based application, contributing to API design and implementation using Spring Boot.",
     ],
   },
 ];
 
 export const researchPublications = [
   {
-    title: "Deep Learning Approaches for Natural Language Understanding: A Comprehensive Survey",
-    authors: "Your Name, Co-Author A, Co-Author B",
-    journal: "IEEE Transactions on Neural Networks and Learning Systems",
-    year: "2024",
-    doi: "https://doi.org/10.xxxx/placeholder",
-    abstract:
-      "This paper presents a comprehensive survey of deep learning methods for natural language understanding tasks, comparing transformer-based architectures with traditional approaches.",
-  },
-  {
-    title: "Efficient Federated Learning for Edge Computing: A Privacy-Preserving Framework",
-    authors: "Your Name, Co-Author C",
-    journal: "ACM Computing Surveys",
-    year: "2023",
-    doi: "https://doi.org/10.xxxx/placeholder",
-    abstract:
-      "We propose a novel federated learning framework optimized for edge devices that maintains model accuracy while ensuring data privacy through differential privacy mechanisms.",
-  },
-  {
     title: "Scalable Real-time Anomaly Detection in IoT Networks Using Graph Neural Networks",
     authors: "Your Name, Co-Author D, Co-Author E",
     journal: "Journal of Network and Computer Applications",
-    year: "2023",
+    year: "2024",
     doi: "https://doi.org/10.xxxx/placeholder",
     abstract:
       "This work introduces a graph neural network-based approach for detecting anomalies in IoT networks in real-time, achieving state-of-the-art performance on multiple benchmark datasets.",
   },
+  {
+    title: "Pneumonia Disease Prediction Using VGG19 Architecture",
+    authors: "Govindgari Sai Srushik, Beebi Naseeba, Nagendra Panini Challa, Visalakshi Annepu, Chandana Gouri Tekkali",
+    journal: "Springer Nature Switzerland on International Conference on Hybrid Intelligent Systems",
+    year: "2023",
+    doi: "https://doi.org/10.1007/978-3-031-78922-9_29",
+    abstract:
+      "Pneumonia, a severe and potentially fatal infectious disease, primarily impacts the lungs in humans. Its main culprit is often identified as Streptococcus pneumonia, a type of bacteria. According to the World Health Organization (WHO), Pneumonia causes many deaths in India, responsible for one out of every three reported cases. Creating an automated system to detect pneumonia holds immense potential for expediting the treatment process, especially in remote regions where access to medical expertise may be limited. With the remarkable success of deep learning algorithms, Convolutional Neural Networks (CNN) have gathered significant interest for their effectiveness in analyzing medical images and facilitating disease classification. The methodology employed in this study revolves around the execution of a CNN known as VGG19. This architecture is utilized to process X-ray images and carry out predictive analysis. To carry out the experiments, a diverse collection of chest X-ray images is employed, including both cases with pneumonia and cases without pneumonia. This dataset is utilized to train and test the CNN model. Our main discoveries highlight the impressive effectiveness of the recommended DL model in accurately predicting pneumonia. The VGG19 model, once trained, attained an extraordinary accuracy of 95.35% on the test dataset. Additionally, the model displayed a high sensitivity of 98.77%, demonstrating its proficiency in accurately identifying both positive and negative pneumonia cases. These findings strongly emphasize the capability of deep learning algorithms in assisting radiologists and clinicians by Detecting pneumonia at an early stage, enabling swift and targeted treatment intervention.",
+  }
 ];
 
 export const projectCategories = [
@@ -136,6 +107,7 @@ export const projectCategories = [
   { key: "frontend", label: "Frontend Development" },
   { key: "backend", label: "Backend Development" },
   { key: "fullstack", label: "Full-Stack" },
+  { key: "testing", label: "Testing" },
 ];
 
 export const projects = [

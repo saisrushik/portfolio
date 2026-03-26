@@ -3,8 +3,15 @@ import SectionWrapper from "../components/SectionWrapper";
 import { StaggerContainer, StaggerItem } from "../components/AnimatedSection";
 import { HiDocumentText, HiExternalLink } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Publications() {
+  const [expanded, setExpanded] = useState({});
+
+  function toggleExpand(idx) {
+    setExpanded((prev) => ({ ...prev, [idx]: !prev[idx] }));
+  }
+
   return (
     <SectionWrapper title="Research Publications">
       <StaggerContainer className="space-y-6">
@@ -31,9 +38,23 @@ export default function Publications() {
                   <p className="text-sm text-primary-600 dark:text-primary-400 font-medium mb-3">
                     {pub.journal} &middot; {pub.year}
                   </p>
-                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
-                    {pub.abstract}
-                  </p>
+                  <div className="relative mb-4">
+                    <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed pr-20">
+                      {expanded[index]
+                        ? pub.abstract
+                        : pub.abstract && pub.abstract.length > 300
+                        ? pub.abstract.slice(0, 300) + "..."
+                        : pub.abstract}
+                    </p>
+                    {pub.abstract && pub.abstract.length > 300 && (
+                      <button
+                        onClick={() => toggleExpand(index)}
+                        className="absolute right-0 bottom-0 text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium"
+                      >
+                        {expanded[index] ? "Read less" : "Read more"}
+                      </button>
+                    )}
+                  </div>
                   <motion.a
                     whileHover={{ x: 5 }}
                     href={pub.doi}
