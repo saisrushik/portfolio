@@ -11,9 +11,9 @@ export const personalInfo = {
 export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/sai-srushik/",
   github: "https://github.com/saisrushik/",
-  medium: "https://medium.com/@your-username",
-  kaggle: "https://kaggle.com/govindgarisaisrushik",
-  leetcode: "https://leetcode.com/your-username",
+  medium: "https://medium.com/@saisrushik98",
+  kaggle: "https://www.kaggle.com/saisrushikgovindgari",
+  leetcode: "https://leetcode.com/u/Sai_Srushik/",
   googleScholar: "https://scholar.google.com/citations?user=mLj1zRQAAAAJ",
   deepml: "https://www.deep-ml.com/profile/g4VpZAzefMTgTh8kZyRlqqzHgl12",
   email: "mailto:saisrushik98@gmail.com",
@@ -67,7 +67,9 @@ export const workExperience = [
     location: "Chennai, Tamil Nadu, India",
     period: "Aug 2025 – Present",
     description: [
-      "Developed and maintained web applications using Java, Spring Boot, and React.js, improving user experience and performance.",
+      "Contributed to high-stakes testing to verify functionality of the application, ensuring quality standards for critical software releases.",
+      "Architected an End-to-End Generative AI Pipeline to generate Playwright Automation Scripts using Langchain, Huggingface",
+      "Automated ~400+ number of test cases using Playwright/Python, resulting in reduction in manual testing time."
     ],
   },
   {
@@ -76,20 +78,21 @@ export const workExperience = [
     location: "Chennai, Tamil Nadu, India",
     period: "Apr 2025 – Aug 2025",
     description: [
-      "Assisted in the development of a microservices-based application, contributing to API design and implementation using Spring Boot.",
+      "Trained under the Quality Engineering and Assurance Team.",
+      "Undergone training on Core Java, SQL and Selenium Automation Testing."
     ],
   },
 ];
 
 export const researchPublications = [
   {
-    title: "Scalable Real-time Anomaly Detection in IoT Networks Using Graph Neural Networks",
-    authors: "Your Name, Co-Author D, Co-Author E",
-    journal: "Journal of Network and Computer Applications",
-    year: "2024",
+    title: "LipReadNet: A Hybrid Deep Learning Framework for Silent-to-Speech Translation Using Visual Speech Recognition",
+    authors: "Govindgari Sai Srushik, Reeja S R, Nishanth Gadey, Sahith Krishna",
+    journal: "International Conference on Intelligent Systems and Machine Learning (ICISML-2026)",
+    year: "2026",
     doi: "https://doi.org/10.xxxx/placeholder",
     abstract:
-      "This work introduces a graph neural network-based approach for detecting anomalies in IoT networks in real-time, achieving state-of-the-art performance on multiple benchmark datasets.",
+      "One of the most important technologies for helping those with hearing impairments and enhancing communication in noisy environments is lipreading, or visual speech recognition. Traditional machine learning models and handmade features have been the foundation of conventional lipreading techniques, which have a tendency to perform less well due to variations in camera angles, lighting, and speaker unpredictability. The state of the art in terms of obtaining spatiotemporal and temporal information from lip movements has significantly improved with the advent of deep learning, particularly Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs). The new deep learning-based lipreading system LipReadNet, which translates muted video inputs into text and audio outputs, is presented in this paper. The system uses a hybrid architecture that combines Transformer-based models, such as Vision Transformers (ViTs), and self-attention mechanisms for improved sequence modeling, with 3D CNNs for spatiotemporal feature extraction. Additionally, a Tacotron or WaveNet-based audio synthesis module successfully reconstructs spoken words from silent video sequences by synthesizing natural-sounding speech from the predicted text. The dataset used is Mohamed Bentalb's Lipreading Dataset, which consists of a wide range of labeled movies for robust model generalization, to train and evaluate our system. To lessen variances between speakers, the preprocessing pipeline uses MediaPipe-based face tracking, lip segmentation, and data augmentation techniques. In order to train the model, a loss function that combines Cross-Entropy loss and Connectionist Temporal Classification (CTC) for text prediction is optimized. A neural vocoder trained on high-quality speech samples is employed for audio reconstruction. According to preliminary findings, LipReadNet generates extremely comprehensible speech and achieves state-of-the-art silent-to-text conversion. By bridging the gap between visual and auditory communication, our approach advances the field of assistive AI and paves the way for practical applications in security, accessibility tools, and human-computer interaction. According to preliminary findings, LipReadNet achieves state-of-the-art performance in silent-to-text conversion and produces speech that is extremely comprehensible. Our approach bridges the gap between auditory and visual communication, advances assistive AI, and creates opportunities for real-world uses in accessibility tools, security, and human-computer interaction.",
   },
   {
     title: "Pneumonia Disease Prediction Using VGG19 Architecture",
@@ -114,34 +117,54 @@ export const projectCategories = [
 export const projects = [
   // ── Generative AI / Agentic AI ──
   {
-    title: "AI-Powered Chat Application",
+    title: "LangChain: Summarize Text From YouTube or Website",
     category: "generative-ai",
     description:
-      "A full-stack chat application with AI-powered response generation, real-time messaging, and sentiment analysis. Built with React, Node.js, and OpenAI API.",
-    technologies: ["React", "Node.js", "Socket.io", "OpenAI API", "MongoDB"],
-    imageUrl: "https://placehold.co/600x400/3b82f6/ffffff?text=AI+Chat+App",
-    liveUrl: "https://example.com/project1",
-    githubUrl: "https://github.com/your-username/project1",
+      "A Streamlit web application that summarizes content from YouTube videos or any website URL using LangChain and Groq's LLM.",
+    technologies: ["Python", "Streamlit", "LangChain", "Groq LLM", "BeautifulSoup"],
+    imageUrl: "https://images.indianexpress.com/2021/06/YouTube-logo.jpg?w=1200",
+    liveUrl: "https://text-summarization-using-langchain-groq.streamlit.app/",
+    githubUrl: "https://github.com/saisrushik/youtube-video-summarizer",
   },
   {
-    title: "Autonomous Research Agent",
+    title: "Text Summarization using LangChain and Groq",
     category: "generative-ai",
     description:
-      "An agentic AI system that autonomously searches the web, synthesizes information, and generates comprehensive research reports using LangChain and GPT-4.",
-    technologies: ["Python", "LangChain", "GPT-4", "Pinecone", "FastAPI"],
-    imageUrl: "https://placehold.co/600x400/6366f1/ffffff?text=Research+Agent",
-    liveUrl: "https://example.com/project-agent",
-    githubUrl: "https://github.com/your-username/research-agent",
+      "This project demonstrates advanced text summarization techniques using LangChain and the Groq API. It supports summarizing both direct text input and PDF documents using various summarization strategies.",
+    technologies: ["Python", "LangChain", "Streamlit", "Groq LLM", "PyPDF2"],
+    imageUrl: "https://www.vennify.ai/content/images/size/w960/2021/06/text-sum-thumbnail.png",
+    liveUrl: "https://text-summarization-using-langchain-groq.streamlit.app/",
+    githubUrl: "https://github.com/saisrushik/Text-summarization-using-langchain",
   },
   {
-    title: "AI Image Generation Studio",
+    title: "Chat-SQL: A ChatBot with SQL DB using LangChain Toolkit",
     category: "generative-ai",
     description:
-      "A creative studio allowing users to generate, edit, and upscale images using Stable Diffusion and ControlNet with an intuitive drag-and-drop interface.",
+      "A ChatBot that allows users to interact with a SQL database using natural language queries.",
     technologies: ["Python", "Stable Diffusion", "ControlNet", "React", "Flask"],
-    imageUrl: "https://placehold.co/600x400/a855f7/ffffff?text=AI+Image+Studio",
-    liveUrl: "https://example.com/project-imggen",
-    githubUrl: "https://github.com/your-username/ai-image-studio",
+    imageUrl: "https://raw.githubusercontent.com/sqlchat/sqlchat/main/public/banner.webp",
+    liveUrl: "https://chat-sql---a-chatbot-with-sql-db-uisng-langchain-toolkit-x3las.streamlit.app/",
+    githubUrl: "https://github.com/saisrushik/Chat-SQL---a-ChatBot-with-SQL-DB-uisng-langchain-Toolkit",
+  },
+  {
+    title: "Playwright Automation Script Generator",
+    category: "generative-ai",
+    description:
+      "An AI-powered tool that generates Playwright automation scripts (Web & API) using test scenarios, test cases, and test steps. Built with Streamlit and open-source LLMs.",
+    technologies: ["Python", "Streamlit", "Ollama", "LangChain", "Azure OpenAI"],
+    imageUrl: "https://logowik.com/content/uploads/images/playwright1721168008.logowik.com.webp",
+    liveUrl: "https://playwright-automation-scripts-generato-spgc9anufcfq47n3jrwrrg.streamlit.app/",
+    githubUrl: "https://github.com/saisrushik/Playwright-Automation-Scripts-Generator",
+  },
+  {
+    title: "PDF Data Extraction using NER (SpaCy)",
+    category: "generative-ai",
+    description:
+      "This project is a Full-Stack NLP based application that extracts structured data (Name, Phone Number, Address, and Job) from PDF files, displays the data in a user-friendly HTML table, and allows users to download the extracted data in CSV and JSON formats.",
+    technologies: ["Python", "React", "Flask", "Spacy", "NLP", "pdfplumber"],
+    imageUrl: "https://www.pngall.com/wp-content/uploads/2/Downloadable-PDF-Button-PNG-HD-Image.png",
+    liveUrl: "",
+    githubUrl: "https://github.com/saisrushik/PDF-Data-Extraction-using-NER-(SpaCy)",
   },
   // ── Machine Learning ──
   {
@@ -176,99 +199,57 @@ export const projects = [
   },
   // ── Frontend Development ──
   {
-    title: "Interactive Portfolio Builder",
+    title: "NxtTrnedz E-Commerce Application",
     category: "frontend",
     description:
-      "A drag-and-drop portfolio builder with live preview, theme customization, and export-to-PDF functionality built with React and Tailwind CSS.",
-    technologies: ["React", "Tailwind CSS", "DnD Kit", "Framer Motion", "Vite"],
-    imageUrl: "https://placehold.co/600x400/06b6d4/ffffff?text=Portfolio+Builder",
+      "A modern e-commerce web application with a sleek UI, product catalog, shopping cart, and checkout flow. Built with React and Bootstrap for a responsive design.",
+    technologies: ["React", "Bootstrap", "JavaScript"],
+    imageUrl: "https://png.pngtree.com/template/20190927/ourmid/pngtree-e-commerce-logo-template-image_311731.jpg",
     liveUrl: "https://example.com/project-portfolio",
-    githubUrl: "https://github.com/your-username/portfolio-builder",
+    githubUrl: "https://github.com/saisrushik/Nxtrendz-Ecommerce-Application",
   },
   {
-    title: "Real-Time Data Visualization",
+    title: "Portfolio",
     category: "frontend",
     description:
-      "A responsive dashboard with real-time charts, maps, and animated data visualizations using D3.js and WebSocket connections.",
-    technologies: ["React", "D3.js", "WebSocket", "Tailwind CSS", "TypeScript"],
-    imageUrl: "https://placehold.co/600x400/14b8a6/ffffff?text=Data+Viz",
-    liveUrl: "https://example.com/project-dataviz",
-    githubUrl: "https://github.com/your-username/data-viz",
+      "A personal portfolio website showcasing projects, skills, and experience. Features a clean design, smooth animations, and responsive layout for optimal viewing on all devices.",
+    technologies: ["React", "React-Animations", "Vite", "Tailwind CSS", "JavaScript"],
+    imageUrl: "https://placehold.co/600x400/06b6d4/ffffff?text=Portfolio+Builder",
+    liveUrl: "https://shiny-liger-6996cd.netlify.app/",
+    githubUrl: "https://github.com/saisrushik/portfolio",
   },
   // ── Backend Development ──
   {
-    title: "Cloud-Native Microservices Platform",
+    title: "Twwitter API Clone Application",
     category: "backend",
     description:
-      "A containerized microservices platform with service discovery, load balancing, and auto-scaling capabilities deployed on AWS using Kubernetes.",
-    technologies: ["Java", "Spring Boot", "Docker", "Kubernetes", "AWS"],
-    imageUrl: "https://placehold.co/600x400/10b981/ffffff?text=Microservices",
-    liveUrl: "https://example.com/project3",
-    githubUrl: "https://github.com/your-username/project3",
-  },
-  {
-    title: "High-Throughput Event Pipeline",
-    category: "backend",
-    description:
-      "A distributed event-driven architecture processing 500K+ events/sec using Kafka, Redis, and Go, with exactly-once delivery and dead-letter queues.",
-    technologies: ["Go", "Kafka", "Redis", "gRPC", "Prometheus"],
-    imageUrl: "https://placehold.co/600x400/f97316/ffffff?text=Event+Pipeline",
-    liveUrl: "https://example.com/project-pipeline",
-    githubUrl: "https://github.com/your-username/event-pipeline",
+      "A RESTful API clone of Twitter's core functionality, implemented with Node.js and Express, featuring user authentication, tweet creation, and real-time updates.",
+    technologies: ["JavaScript", "Node.js", "Express"],
+    imageUrl: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?semt=ais_incoming&w=740&q=80",
+    liveUrl: "",
+    githubUrl: "https://github.com/saisrushik/Twitter-API-clone-application",
   },
   // ── Full-Stack ──
+
+  // ── Testing ──
   {
-    title: "Social Learning Platform",
-    category: "fullstack",
+    title: "MakeMyTrip Automation Testing",
+    category: "testing",
     description:
-      "A collaborative learning platform with video courses, live Q&A, code playgrounds, and progress tracking. Features real-time collaboration and AI-assisted tutoring.",
-    technologies: ["Next.js", "Node.js", "PostgreSQL", "Redis", "AWS S3"],
-    imageUrl: "https://placehold.co/600x400/ec4899/ffffff?text=Learning+Platform",
-    liveUrl: "https://example.com/project-learn",
-    githubUrl: "https://github.com/your-username/social-learning",
-  },
-  {
-    title: "Healthcare Appointment System",
-    category: "fullstack",
-    description:
-      "An end-to-end healthcare platform with appointment booking, telemedicine video calls, prescription management, and HIPAA-compliant data storage.",
-    technologies: ["React", "Express", "MongoDB", "WebRTC", "Docker"],
-    imageUrl: "https://placehold.co/600x400/0ea5e9/ffffff?text=Healthcare+App",
-    liveUrl: "https://example.com/project-health",
-    githubUrl: "https://github.com/your-username/healthcare-app",
-  },
+      "Automated testing suite for the MakeMyTrip website using Selenium WebDriver, Cucumber for BDD, and TestNG for test management. Covers end-to-end scenarios for flight booking, hotel reservations, and user authentication.",
+    technologies: ["Java", "Selenium", "Cucumber", "TestNG", "Maven"],
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/61/Makemytrip_logo.svg",
+    liveUrl: "",
+    githubUrl: "https://github.com/saisrushik/MakeMyTrip-Automation-Testing",
+  }
 ];
 
 export const certifications = [
   {
-    title: "AWS Certified Solutions Architect – Associate",
-    issuer: "Amazon Web Services",
-    date: "Jan 2024",
-    credentialUrl: "https://example.com/cert1",
-  },
-  {
-    title: "TensorFlow Developer Certificate",
-    issuer: "Google",
-    date: "Sep 2023",
-    credentialUrl: "https://example.com/cert2",
-  },
-  {
-    title: "Microsoft Certified: Azure Data Scientist Associate",
+    title: "Microsoft Certified: Azure AI Fundamentals - 5B1F2867F3F3FC03",
     issuer: "Microsoft",
     date: "Jun 2023",
-    credentialUrl: "https://example.com/cert3",
-  },
-  {
-    title: "Meta Back-End Developer Professional Certificate",
-    issuer: "Meta",
-    date: "Mar 2023",
-    credentialUrl: "https://example.com/cert4",
-  },
-  {
-    title: "Deep Learning Specialization",
-    issuer: "Coursera – DeepLearning.AI",
-    date: "Dec 2022",
-    credentialUrl: "https://example.com/cert5",
+    credentialUrl: "https://learn.microsoft.com/en-gb/users/saisrushik/credentials/certification/azure-ai-fundamentals",
   },
 ];
 
